@@ -5,13 +5,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Roman extends Kitap {
+public class Hikaye extends Kitap{
+    
+String ad,yazarAd;
 
-    String ad,yazarAd;
-    public Roman(String ad,String yazarAd) {
+    public Hikaye(String ad, String yazarAd) {
         this.ad = ad;
         this.yazarAd = yazarAd;
-      
     }
     
     public void kitapEkle() throws IOException{
@@ -29,14 +29,13 @@ public class Roman extends Kitap {
 
     @Override
     public String tur() {
-        return "Roman";
+        return "Hikaye";
     }
 
     @Override
     public int fiyat() {
-        return 20;
+       return 10;
     }
-
-    
-    
+   
+   
 }

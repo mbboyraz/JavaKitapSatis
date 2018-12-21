@@ -1,8 +1,8 @@
 package buskutuphane;
 
-public abstract class Kitap extends KitapFiyati implements Ad {
+public abstract class Kitap implements Fiyat{
 
-    public abstract String yazar(String yazar);
+    public abstract String tur();
     
 
 }
